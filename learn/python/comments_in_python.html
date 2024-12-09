@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comments in Python</title>
+  <meta name="description"
+    content="Learn how to use comments in Python effectively. Understand single-line, multi-line, and inline comments with examples, and discover best practices for writing clean and readable Python code.">
+  <meta name="keywords"
+    content="Comments in Python, Python comments tutorial, Python single-line comments, Python multi-line comments, How to write comments in Python, Python comments examples, Python inline comments, Python code readability, Best practices for Python comments, Python programming basics">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <script src="/js/main.js" defer></script>
+  <script src="/js/sidebar.js" defer></script>
+
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div id="navbar-placeholder"></div>
+
+
+  <!-- Main Layout -->
+  <main class="d-lg-flex flex-nowrap d-block">
+
+    <!-- Sidebar -->
+    <div id="sidebar-placeholder"></div>
+
+    <!-- Main Content -->
+    <div class="content">
+      <h2>Comments in Python</h2>
+      <p><strong>What are comments?</strong> Comments are special notes that you write in your Python code. These notes
+        are only for humans to read. The computer ignores comments when running your code.</p>
+
+      <h3>Why Do We Use Comments?</h3>
+      <p>Here are some reasons why we use comments:</p>
+      <ul class="feature-list">
+        <li><strong>To explain the code:</strong> Comments help others (and your future self) understand what your code
+          does.</li>
+        <li><strong>To make code readable:</strong> Well-commented code is easier to read and understand.</li>
+        <li><strong>To test or debug:</strong> You can use comments to temporarily disable parts of your code for
+          testing.</li>
+      </ul>
+
+      <h3>Types of Comments in Python</h3>
+      <p>Python has two types of comments:</p>
+      <ul class="feature-list">
+        <li><strong>Single-line Comments:</strong> Use the <code>#</code> symbol. Everything after the <code>#</code> is
+          ignored by Python.</li>
+        <li><strong>Multi-line Comments:</strong> Use triple quotes (<code>"""</code> or <code>'''</code>) for longer
+          comments. Python ignores everything between these quotes.</li>
+      </ul>
+
+      <h3>How to Write Comments?</h3>
+      <p>Here's how you can use <code>#</code> and <code>"""</code> for comments:</p>
+
+      <h4>1. Single-line Comments</h4>
+      <p>Single-line comments start with <code>#</code>. Python ignores anything written after the <code>#</code>.</p>
+      <div class="code-block">
+        <pre>
+# This is a single-line comment
+print("Hello, world!")  # This comment explains the print statement
+    </pre>
+      </div>
+      <p><strong>Explanation:</strong> The comment <code># This is a single-line comment</code> is ignored by Python and
+        doesn’t affect the program. Only the <code>print("Hello, world!")</code> command runs.</p>
+
+      <h4>2. Multi-line Comments</h4>
+      <p>Multi-line comments are written inside triple quotes (<code>"""</code> or <code>'''</code>). They are useful
+        for adding longer explanations.</p>
+      <div class="code-block">
+        <pre>
+"""
+This is a multi-line comment.
+It can span multiple lines.
+Python ignores everything inside these quotes.
+"""
+print("Learning Python is fun!")
+    </pre>
+      </div>
+      <p><strong>Explanation:</strong> Everything inside <code>"""</code> or <code>'''</code> is ignored by Python, so
+        it doesn’t affect the program.</p>
+
+      <h3>Practice Example</h3>
+      <p>Let's use both single-line and multi-line comments in a program:</p>
+      <div class="code-block">
+        <pre>
+# This program calculates the area of a rectangle
+
+# Define the length and width
+length = 5  # Length of the rectangle
+width = 3   # Width of the rectangle
+
+"""
+Now we calculate the area.
+The formula for area is length multiplied by width.
+"""
+area = length * width
+
+# Print the result
+print("The area of the rectangle is:", area)
+    </pre>
+      </div>
+      <p><strong>What to do:</strong> Copy this code into Python and run it. Notice how comments help explain each step
+        of the code.</p>
+    </div>
+
+
+
+
+  </main>
+
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

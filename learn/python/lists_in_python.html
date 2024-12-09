@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lists in Python</title>
+    <meta name="description"
+        content="Explore lists in Python with this beginner-friendly guide. Learn how to create, modify, and manipulate lists, and understand common list operations and methods with examples.">
+    <meta name="keywords"
+        content="Lists in Python, Python list tutorial, Python list operations, Python list methods, How to create a list in Python, Python list examples, Modify lists in Python, Python data structures, Python beginners guide">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <script src="/js/main.js" defer></script>
+    <script src="/js/sidebar.js" defer></script>
+
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div id="navbar-placeholder"></div>
+
+
+    <!-- Main Layout -->
+    <main class="d-lg-flex flex-nowrap d-block">
+
+        <!-- Sidebar -->
+        <div id="sidebar-placeholder"></div>
+
+        <!-- Main Content -->
+
+        <div class="content">
+            <h2>Working with Lists in Python</h2>
+            <p>A <strong>list</strong> is a collection of items or values in Python. Lists are used to store multiple
+                items in a single variable. They are one of the most important data structures in Python.</p>
+
+            <!-- Creating a List -->
+            <div>
+                <h3>Creating a List</h3>
+                <p>A list in Python is used to store multiple items in one variable. You create a list by enclosing the
+                    items in
+                    square brackets <code>[ ]</code> and separating them with commas.</p>
+                <p>For example:</p>
+                <pre>
+        <code>
+# Creating a list of fruits
+fruits = ["Apple", "Banana", "Cherry", "Mango"]
+print(fruits)
+        </code>
+    </pre>
+                <p>Explanation:</p>
+                <ul>
+                    <li>The <code>fruits</code> variable is a list containing 4 items: "Apple", "Banana", "Cherry", and
+                        "Mango".</li>
+                    <li>You can add, remove, or change items in the list later.</li>
+                    <li>Lists are very useful when you want to work with multiple values together.</li>
+                </ul>
+                <p>When you run this code, it will display:</p>
+                <pre>
+        <code>
+['Apple', 'Banana', 'Cherry', 'Mango']
+        </code>
+    </pre>
+            </div>
+
+            <!-- Accessing List Elements -->
+            <div>
+                <h3>Accessing List Elements</h3>
+                <p>In Python, every item in a list has a unique position called an <b>index</b>. The index helps us
+                    access individual items. Here are some important points to understand about list indexing:</p>
+                <ul>
+                    <li>The first item in the list has an index of <code>0</code>.</li>
+                    <li>The second item has an index of <code>1</code>, the third item has an index of <code>2</code>,
+                        and so on.</li>
+                    <li>You can also use <b>negative indexing</b> to access items from the end of the list. For example,
+                        <code>-1</code> is the index of the last item, <code>-2</code> is the second last, and so on.
+                    </li>
+                </ul>
+                <p>Here's an example:</p>
+                <pre>
+        <code>
+# List of fruits
+fruits = ["Apple", "Banana", "Cherry", "Mango"]
+
+# Accessing items using positive indexing
+print(fruits[0])  # First item: Apple
+print(fruits[1])  # Second item: Banana
+
+# Accessing items using negative indexing
+print(fruits[-1])  # Last item: Mango
+print(fruits[-2])  # Second last item: Cherry
+        </code>
+    </pre>
+                <p><b>Explanation:</b></p>
+                <ul>
+                    <li><code>fruits[0]</code> gives the first item, "Apple".</li>
+                    <li><code>fruits[1]</code> gives the second item, "Banana".</li>
+                    <li><code>fruits[-1]</code> starts counting from the end, so it gives "Mango".</li>
+                    <li><code>fruits[-2]</code> is the second last item, so it gives "Cherry".</li>
+                </ul>
+                <p>When you run this code, the output will be:</p>
+                <pre>
+        <code>
+Apple
+Banana
+Mango
+Cherry
+        </code>
+    </pre>
+                <p><b>Things to keep in mind:</b></p>
+                <ul>
+                    <li>If you try to access an index that doesn’t exist, Python will throw an error. For example,
+                        <code>fruits[4]</code> will cause an <code>IndexError</code> since there is no 5th item in the
+                        list.
+                    </li>
+                    <li>Indexing is very useful when you want to work with specific items in the list.</li>
+                </ul>
+            </div>
+
+            <!-- Modifying List Elements -->
+            <div>
+                <h3>Modifying List Elements</h3>
+                <p>In Python, you can change the value of a specific item in a list by using its index. Here's how it
+                    works:</p>
+                <p><b>Example:</b></p>
+                <pre>
+        <code>
+# Original list of fruits
+fruits = ["Apple", "Banana", "Cherry", "Mango"]
+
+# Change "Banana" to "Orange"
+fruits[1] = "Orange"
+
+print(fruits)
+        </code>
+    </pre>
+                <p><b>Explanation:</b></p>
+                <ul>
+                    <li>The original list is <code>["Apple", "Banana", "Cherry", "Mango"]</code>.</li>
+                    <li><code>fruits[1]</code> refers to the second item, "Banana".</li>
+                    <li>We change "Banana" to "Orange" by assigning a new value: <code>fruits[1] = "Orange"</code>.</li>
+                    <li>After this, the updated list becomes <code>["Apple", "Orange", "Cherry", "Mango"]</code>.</li>
+                </ul>
+                <p><b>Output:</b></p>
+                <pre>
+        <code>
+["Apple", "Orange", "Cherry", "Mango"]
+        </code>
+    </pre>
+            </div>
+
+            <!-- Adding Items to a List -->
+            <div>
+                <h3>Adding Items to a List</h3>
+                <p>You can add new items to the end of a list using the <code>append()</code> method. This is useful
+                    when you want to expand your list.</p>
+                <p><b>Example:</b></p>
+                <pre>
+        <code>
+# Original list of fruits
+fruits = ["Apple", "Banana", "Cherry"]
+
+# Add "Mango" to the list
+fruits.append("Mango")
+
+print(fruits)
+        </code>
+    </pre>
+                <p><b>Explanation:</b></p>
+                <ul>
+                    <li>The original list is <code>["Apple", "Banana", "Cherry"]</code>.</li>
+                    <li>The <code>append()</code> method adds the new item, "Mango", to the end of the list.</li>
+                    <li>After appending, the updated list becomes <code>["Apple", "Banana", "Cherry", "Mango"]</code>.
+                    </li>
+                </ul>
+                <p><b>Output:</b></p>
+                <pre>
+        <code>
+["Apple", "Banana", "Cherry", "Mango"]
+        </code>
+    </pre>
+            </div>
+
+            <!-- Removing Items from a List -->
+            <div>
+                <h3>Removing Items from a List</h3>
+                <p>In Python, you can remove items from a list using different methods. The two most common methods are:
+                </p>
+
+                <h4>1. Using the <code>remove()</code> method</h4>
+                <p>The <code>remove()</code> method is used to remove a specific item from the list by its value.</p>
+                <p><b>Example:</b></p>
+                <pre>
+        <code>
+# List of fruits
+fruits = ["Apple", "Banana", "Cherry", "Mango"]
+
+# Remove "Banana" from the list
+fruits.remove("Banana")
+
+print(fruits)
+        </code>
+    </pre>
+                <p><b>Explanation:</b></p>
+                <ul>
+                    <li>The original list is <code>["Apple", "Banana", "Cherry", "Mango"]</code>.</li>
+                    <li><code>fruits.remove("Banana")</code> looks for "Banana" in the list and removes it.</li>
+                    <li>After this, the list becomes <code>["Apple", "Cherry", "Mango"]</code>.</li>
+                </ul>
+                <p><b>Output:</b></p>
+                <pre>
+        <code>
+["Apple", "Cherry", "Mango"]
+        </code>
+    </pre>
+
+                <h4>2. Using the <code>pop()</code> method</h4>
+                <p>The <code>pop()</code> method removes an item by its index. If you don’t provide an index, it removes
+                    the last item by default.</p>
+                <p><b>Example:</b></p>
+                <pre>
+        <code>
+# List of fruits
+fruits = ["Apple", "Banana", "Cherry", "Mango"]
+
+# Remove the item at index 2 (third item)
+fruits.pop(2)
+
+print(fruits)
+        </code>
+    </pre>
+                <p><b>Explanation:</b></p>
+                <ul>
+                    <li>The original list is <code>["Apple", "Banana", "Cherry", "Mango"]</code>.</li>
+                    <li><code>fruits.pop(2)</code> removes the item at index 2, which is "Cherry".</li>
+                    <li>After this, the list becomes <code>["Apple", "Banana", "Mango"]</code>.</li>
+                    <li>If you use <code>fruits.pop()</code> without an index, it will remove the last item, "Mango".
+                    </li>
+                </ul>
+                <p><b>Output:</b></p>
+                <pre>
+        <code>
+["Apple", "Banana", "Mango"]
+        </code>
+    </pre>
+
+                <h4>3. Important Notes:</h4>
+                <ul>
+                    <li>If you try to remove an item that is not in the list using <code>remove()</code>, Python will
+                        throw an error.</li>
+                    <li><code>pop()</code> is useful when you know the position (index) of the item to be removed.</li>
+                    <li>Both methods change the original list directly (in-place modification).</li>
+                </ul>
+            </div>
+
+            <!-- Example for Practice -->
+            <div>
+                <h3>Practice Challenge</h3>
+                <p>Try creating a list of your favorite fruits, then:</p>
+                <ul>
+                    <li>Change one of the fruits.</li>
+                    <li>Add a new fruit to the list.</li>
+                    <li>Remove a fruit from the list.</li>
+                </ul>
+                <p>Here’s a starting point:</p>
+                <pre>
+        <code>
+fruits = ["Mango", "Apple", "Banana"]
+fruits[1] = "Grapes"  # Change "Apple" to "Grapes"
+fruits.append("Pineapple")  # Add "Pineapple"
+fruits.remove("Banana")  # Remove "Banana"
+print(fruits)
+        </code>
+                    </pre>
+            </div>
+        </div>
+
+
+
+    </main>
+
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

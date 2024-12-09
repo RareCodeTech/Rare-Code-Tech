@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Type Casting in Python</title>
+  <meta name="description"
+    content="Learn about type casting in Python with examples. Understand how to convert between data types like integers, strings, and floats, and master explicit and implicit type casting techniques.">
+  <meta name="keywords"
+    content="Type casting in Python, Python type conversion, Python explicit type casting, Python implicit type casting, Python type conversion examples, Python data types, Convert data types in Python, Python casting tutorial, Python beginners guide">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <script src="/js/main.js" defer></script>
+  <script src="/js/sidebar.js" defer></script>
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div id="navbar-placeholder"></div>
+
+
+  <!-- Main Layout -->
+  <main class="d-lg-flex flex-nowrap d-block">
+
+    <!-- Sidebar -->
+    <div id="sidebar-placeholder"></div>
+
+    <!-- Main Content -->
+
+    <div class="content">
+      <h2>Type Casting in Python</h2>
+      <p><strong>What is Type Casting?</strong> Type casting means converting one data type to another. For example,
+        converting a number to a string or a string to a number. Python provides built-in functions to do this.</p>
+
+      <h3>Why Use Type Casting?</h3>
+      <p>Sometimes, you need to change the type of a value to perform certain operations. For example:</p>
+      <ul class="feature-list">
+        <li><strong>Joining text and numbers:</strong> You can convert a number to a string to combine it with text.
+        </li>
+        <li><strong>Mathematical operations:</strong> You can convert a string to a number to perform calculations.</li>
+      </ul>
+
+      <h3>Common Type Casting Functions</h3>
+      <p>Here are the most commonly used type casting functions in Python:</p>
+      <ul class="feature-list">
+        <li><code>int()</code>: Converts a value to an integer.</li>
+        <li><code>float()</code>: Converts a value to a floating-point number (decimal).</li>
+        <li><code>str()</code>: Converts a value to a string.</li>
+      </ul>
+
+      <h3>Examples of Type Casting</h3>
+      <p>Let's look at some examples to understand how type casting works:</p>
+
+      <h4>1. Converting Numbers to Strings</h4>
+      <p>When you want to combine a number with text, you need to convert the number to a string first:</p>
+      <div class="code-block">
+        <pre>
+# Example 1: Number to String
+age = 25
+# Convert age to a string and combine it with text
+message = "I am " + str(age) + " years old."
+print(message)
+    </pre>
+      </div>
+      <p><strong>Explanation:</strong> The <code>str(age)</code> converts the number <code>25</code> into a string, so
+        it can be joined with the text using <code>+</code>.</p>
+
+      <h4>2. Converting Strings to Numbers</h4>
+      <p>When you need to perform calculations with user input, you can convert a string to a number:</p>
+      <div class="code-block">
+        <pre>
+# Example 2: String to Integer
+user_input = "5"  # Input is always a string
+# Convert the string to an integer
+number = int(user_input)
+# Perform a calculation
+result = number * 2
+print("The result is:", result)
+    </pre>
+      </div>
+      <p><strong>Explanation:</strong> The <code>int(user_input)</code> converts the string <code>"5"</code> into the
+        number <code>5</code>, allowing us to multiply it by 2.</p>
+
+      <h4>3. Converting Integers to Floats</h4>
+      <p>If you want more precise calculations, you can convert integers to floating-point numbers:</p>
+      <div class="code-block">
+        <pre>
+# Example 3: Integer to Float
+number = 10
+# Convert the integer to a float
+float_number = float(number)
+print("The float value is:", float_number)
+    </pre>
+      </div>
+      <p><strong>Explanation:</strong> The <code>float(number)</code> converts the integer <code>10</code> to a
+        floating-point number <code>10.0</code>.</p>
+
+      <h3>Practice Example</h3>
+      <p>Here’s a small program to practice type casting:</p>
+      <div class="code-block">
+        <pre>
+# Practice: Combine user input with type casting
+name = input("Enter your name: ")
+age = input("Enter your age: ")  # Input is a string
+# Convert age to an integer
+age_next_year = int(age) + 1
+# Display the message
+print("Hello, " + name + "! Next year, you will be " + str(age_next_year) + " years old.")
+    </pre>
+      </div>
+      <p><strong>Explanation:</strong> This program takes the user's age as a string, converts it to an integer for
+        calculation, and then converts the result back to a string for display.</p>
+    </div>
+
+
+
+  </main>
+
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Internet Protocols</title>
+    <meta name="description"
+        content="Discover the key internet protocols like TCP/IP, UDP, HTTP, and more. Learn how these protocols facilitate communication and data transfer over networks and the internet.">
+    <meta name="keywords"
+        content="Internet protocols, Understanding TCP/IP, Networking protocols, TCP IP communication, HTTP protocol, UDP protocol, Internet data transfer, Protocols in networking, Network communication basics, Internet protocol types">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <script src="/js/main.js" defer></script>
+    <script src="/js/sidebar.js" defer></script>
+
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div id="navbar-placeholder"></div>
+
+
+    <!-- Main Layout -->
+    <main class="d-lg-flex flex-nowrap d-block">
+
+        <!-- Sidebar -->
+        <div id="sidebar-placeholder"></div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <h2>Understanding Internet Protocols</h2>
+            <p>Imagine the internet as a massive highway system connecting millions of vehicles (data packets) from all
+                over the world. But for the vehicles to travel smoothly, they need rules, traffic signs, and
+                instructions. These rules and instructions are what we call <b>Internet Protocols</b> (IPs). Let's
+                explore how they work!</p>
+
+            <h3>What are Internet Protocols?</h3>
+            <p>In simple terms, <b>Internet Protocols</b> are a set of rules or conventions that determine how data is
+                transmitted across the internet or any network. Think of them as the traffic rules that guide the data
+                packets to reach their destination safely and efficiently. Without these protocols, it would be like
+                driving without traffic lights—utter chaos!</p>
+
+            <h3>Why are Internet Protocols Important?</h3>
+            <p>Internet protocols ensure that devices (like your computer, smartphone, or even a smart fridge) can
+                communicate with each other across networks. They define the format, addressing, routing, and
+                error-checking mechanisms needed to ensure smooth and accurate communication. Basically, they’re the
+                invisible heroes of the digital world, making sure you don’t get lost in cyberspace!</p>
+
+            <h3>Common Types of Internet Protocols</h3>
+            <p>Now that we understand their importance, let's break down the most common types of internet protocols
+                that make the web run smoothly:</p>
+
+            <ul class="feature-list">
+                <li><b>IP (Internet Protocol):</b> The backbone of internet communication. The Internet Protocol is
+                    responsible for addressing and routing data packets. Every device on the internet has a unique IP
+                    address, similar to a home address, that helps data know where to go. There are two main versions:
+                </li>
+                <ul>
+                    <li><b>IPv4:</b> The older and more commonly used version, which provides a 32-bit address, leading
+                        to about 4.3 billion unique addresses. (Yes, this seemed like enough, but we ran out of
+                        addresses!)</li>
+                    <li><b>IPv6:</b> A newer version with a 128-bit address, giving us a virtually unlimited number of
+                        addresses—essentially enough for every device on Earth and beyond!</li>
+                </ul>
+
+                <li><b>TCP/IP (Transmission Control Protocol/Internet Protocol):</b> TCP/IP is the fundamental suite of
+                    protocols that powers the internet. It ensures reliable delivery of data by breaking it down into
+                    packets, sending it over the network, and reassembling it at the destination. Think of it as a
+                    package delivery service. You send a package (data), and TCP/IP ensures it reaches its destination
+                    in one piece, no matter how many detours it has to take.</li>
+
+                <li><b>HTTP (Hypertext Transfer Protocol):</b> HTTP is used by web browsers to request and receive web
+                    pages. When you type a URL like <i>www.example.com</i>, your browser uses HTTP to ask the server for
+                    the page, and the server sends it back. HTTP is like the waiter in a restaurant—taking your order
+                    (the request) and bringing you the food (the webpage)!</li>
+
+                <li><b>HTTPS (Hypertext Transfer Protocol Secure):</b> HTTPS is the secure version of HTTP. It uses
+                    encryption to protect the data being sent between your browser and the website, ensuring privacy and
+                    security. This is why you see that little padlock symbol in the address bar when visiting secure
+                    websites, like online banking or shopping sites. It’s like sending your letter in a sealed envelope
+                    instead of an open postcard!</li>
+
+                <li><b>DNS (Domain Name System):</b> DNS is like the phonebook of the internet. It converts
+                    human-readable domain names (like <i>www.google.com</i>) into machine-readable IP addresses (like
+                    <i>172.217.5.68</i>). Imagine having to memorize an IP for every website you visit—DNS does
+                    the hard work of converting easy-to-remember names into numbers for you!
+                </li>
+
+                <li><b>FTP (File Transfer Protocol):</b> FTP is used to transfer files over the internet. It’s commonly
+                    used to upload and download files from web servers. Think of FTP like a digital postman that
+                    delivers packages (files) to the right address. Want to upload a website? FTP is your friend!</li>
+
+                <li><b>DHCP (Dynamic Host Configuration Protocol):</b> DHCP is responsible for automatically assigning
+                    IP addresses to devices on a network. It’s like a traffic controller assigning lanes to cars to
+                    avoid confusion. When you connect to Wi-Fi, your device gets an IP address from the DHCP server so
+                    it can communicate on the network.</li>
+
+                <li><b>SMTP (Simple Mail Transfer Protocol):</b> SMTP is the protocol used for sending emails. It
+                    defines how emails are transmitted between servers. When you hit "send" on an email, SMTP is at work
+                    making sure your message is delivered to the recipient’s server. Think of SMTP as the digital post
+                    office handling your mail.</li>
+            </ul>
+
+            <h3>How Internet Protocols Work Together</h3>
+            <p>To understand how these protocols work together, let’s imagine you’re sending a letter to a friend across
+                the world (because who doesn’t love a bit of old-school snail mail?). Here's the breakdown:</p>
+            <ul class="usage-list">
+                <li><b>Step 1 - You Write the Letter:</b> You create a letter (your data) and address it (using the
+                    correct IP address). In the digital world, this is like using IP and DNS to identify the
+                    destination.</li>
+                <li><b>Step 2 - The Letter Gets Packed:</b> You break your letter into smaller pieces (data packets).
+                    This is done by the <b>TCP/IP protocol</b>, which ensures your data can be divided and sent over the
+                    internet.</li>
+                <li><b>Step 3 - Sending the Letter:</b> The letter is sent through a network (this could be over Wi-Fi,
+                    fiber optics, etc.). Each packet follows the rules set by <b>TCP/IP</b>, ensuring they find their
+                    way to the right destination.</li>
+                <li><b>Step 4 - Opening the Letter:</b> Your friend receives the letter and opens it (data is
+                    reassembled). This is where TCP/IP ensures all the packets are received and reordered correctly.
+                </li>
+                <li><b>Step 5 - Reading the Letter:</b> Your friend reads the message (the data is presented to them in
+                    a readable form, like a website or an email). Here, <b>HTTP/HTTPS</b> protocols ensure that web
+                    pages are delivered securely and properly.</li>
+            </ul>
+
+            <h3>Real-Life Example: Visiting a Website</h3>
+            <p>Let's look at a real-life example: When you visit a website like <i>www.example.com</i>, here’s what
+                happens:</p>
+            <ul class="usage-list">
+                <li><b>DNS:</b> The browser asks the DNS server to resolve "www.example.com" into an IP address (like
+                    192.168.1.1).</li>
+                <li><b>HTTP/HTTPS:</b> The browser uses HTTP (or HTTPS for secure sites) to send a request to the web
+                    server for the website's data.</li>
+                <li><b>TCP/IP:</b> The data is broken into packets by TCP/IP and sent over the network to the server.
+                </li>
+                <li><b>Server Response:</b> The web server sends the requested page back to the browser using the same
+                    set of protocols, and your browser reassembles the data into the webpage you see.</li>
+            </ul>
+
+            <h3>Conclusion</h3>
+            <p>Without internet protocols, the digital world as we know it wouldn’t function. They are the rules that
+                ensure data can flow smoothly, securely, and reliably across the vast network that is the internet. So,
+                next time you browse, send an email, or even post a funny meme, remember that a whole set of protocols
+                are working hard behind the scenes to make it happen!</p>
+        </div>
+
+
+    </main>
+
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
